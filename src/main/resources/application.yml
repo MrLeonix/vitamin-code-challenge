@@ -1,0 +1,10 @@
+services:
+  fmp:
+    apiHost: https://financialmodelingprep.com/
+    apiKey: ${FMP_API_TOKEN:invalid-key}
+spring:
+  data:
+    mongodb:
+      host: ${MONGODB_VITAMIN_HOST:localhost}
+      port: ${MONGODB_VITAMIN_PORT:27017}
+      database: ${MONGODB_VITAMIN_DB:vitamin-challenge}
